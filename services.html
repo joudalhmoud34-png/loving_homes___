@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Care - Services</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#content">Skip to content</a>
+
+<header>
+  <div class="container navbar">
+    <div class="brand">
+      <img class="brand-logo" src="assets/logo.png" alt="Pet Care logo">
+      <div>
+        <h1>Pet Care</h1>
+        <span>Comfortable and safe daily care for your pet</span>
+      </div>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-controls="mainNav" aria-expanded="false">☰</button>
+
+    <nav id="mainNav" aria-label="Main navigation">
+      <ul>
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="services.html">Services</a></li>
+        <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li><a class="nav-link" href="booking.html">Booking</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="content" class="container">
+
+  <section aria-labelledby="servicesTitle">
+    <h2 id="servicesTitle" class="section-title">Our Services</h2>
+    <p class="section-sub">
+      We offer a variety of services designed to keep your pet clean, comfortable, and well-groomed.
+    </p>
+
+    <div class="info-box">
+      <p>
+        Different pets have different needs, so we provide multiple options to suit a range of situations.
+        Some services focus on regular hygiene, while others improve the pet’s appearance and comfort.
+      </p>
+      <p>
+        On this page, you can quickly compare the available services by description, duration, and price,
+        then move directly to the booking page to choose the most suitable option.
+      </p>
+    </div>
+  </section>
+
+  <section aria-labelledby="priceTitle">
+    <h2 id="priceTitle" class="section-title">Service Price List</h2>
+
+    <div class="table-wrap" role="region" aria-label="Service price table" tabindex="0">
+      <table>
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Description</th>
+            <th>Duration</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bathing</td>
+            <td>Gentle washing and drying to keep your pet clean and comfortable</td>
+            <td>30 minutes</td>
+            <td>10 JD</td>
+          </tr>
+          <tr>
+            <td>Trimming</td>
+            <td>Fur shaping and tidy grooming to improve appearance</td>
+            <td>45 minutes</td>
+            <td>15 JD</td>
+          </tr>
+          <tr>
+            <td>Full Grooming</td>
+            <td>Bathing, trimming, and complete grooming in one session</td>
+            <td>70 minutes</td>
+            <td>22 JD</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="margin-top:14px;">
+      <a class="btn btn-primary" href="booking.html">Book a Service</a>
+    </div>
+  </section>
+
+  <section aria-labelledby="videoTitle">
+    <h2 id="videoTitle" class="section-title">Service Example</h2>
+    <p class="section-sub">
+      The video below shows one of the care moments your pet can experience.
+    </p>
+
+    <div class="hero-card hero-media" style="min-height:320px;" aria-label="Bathing service video">
+      <figure>
+        <video autoplay loop muted playsinline aria-label="Video showing a pet bathing session">
+          <source src="assets/showerdog.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>
+          A short clip showing a calm bathing and cleaning session.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">© 2026 - Joud Project | Pet Care</div>
+</footer>
+
+<audio id="clickSound" src="assets/click.mp3" preload="auto"></audio>
+<audio id="successSound" src="assets/success.mp3" preload="auto"></audio>
+<script src="main.js"></script>
+</body>
+</html>

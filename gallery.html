@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Care - Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#content">Skip to content</a>
+
+<header>
+  <div class="container navbar">
+    <div class="brand">
+      <img class="brand-logo" src="assets/logo.png" alt="Pet Care logo">
+      <div>
+        <h1>Pet Care</h1>
+        <span>Comfortable and safe daily care for your pet</span>
+      </div>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-controls="mainNav" aria-expanded="false">☰</button>
+
+    <nav id="mainNav" aria-label="Main navigation">
+      <ul>
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="services.html">Services</a></li>
+        <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li><a class="nav-link" href="booking.html">Booking</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="content" class="container">
+
+  <section aria-labelledby="galleryIntroTitle">
+    <h2 id="galleryIntroTitle" class="section-title">Gallery</h2>
+    <p class="section-sub">
+      Here you can view photos and videos that show the care environment and daily pet services.
+    </p>
+
+    <div class="info-box">
+      <p>
+        The gallery helps pet owners get a clearer idea of the atmosphere and the type of care their pets may receive.
+        It also shows moments related to bathing, grooming, and general comfort.
+      </p>
+      <p>
+        This page is divided into an image gallery and a video gallery to make browsing easier and more organized.
+      </p>
+    </div>
+  </section>
+
+  <section aria-labelledby="imageGalleryTitle">
+    <h2 id="imageGalleryTitle" class="section-title">Image Gallery</h2>
+
+    <div class="cards">
+      <article class="card">
+        <figure>
+          <img src="assets/catphoto.png" alt="A cat in a calm place">
+          <figcaption>A calm and comfortable cat indoors.</figcaption>
+        </figure>
+      </article>
+
+      <article class="card">
+        <figure>
+          <img src="assets/photodog1.png" alt="A dog">
+          <figcaption>A dog shown as part of the visual content.</figcaption>
+        </figure>
+      </article>
+
+      <article class="card">
+        <figure>
+          <img src="assets/catanddogphoto.png" alt="A cat and a dog together">
+          <figcaption>A shared image showing different pets.</figcaption>
+        </figure>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="videoGalleryTitle">
+    <h2 id="videoGalleryTitle" class="section-title">Video Gallery</h2>
+    <p class="section-sub">
+      The following videos show different moments related to care, comfort, and cleanliness.
+    </p>
+
+    <div class="cards">
+      <article class="card">
+        <figure>
+          <div class="rollover">
+            <video autoplay loop muted playsinline aria-label="Cat video">
+              <source src="assets/cat1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <figcaption>A short clip of a cat in the care space.</figcaption>
+        </figure>
+      </article>
+
+      <article class="card">
+        <figure>
+          <div class="rollover">
+            <video autoplay loop muted playsinline aria-label="Dog video">
+              <source src="assets/dog1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <figcaption>A dog shown during a daily care moment.</figcaption>
+        </figure>
+      </article>
+
+      <article class="card">
+        <figure>
+          <div class="rollover">
+            <video autoplay loop muted playsinline aria-label="Another dog video">
+              <source src="assets/dog2.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <figcaption>Another visual example from the pet care environment.</figcaption>
+        </figure>
+      </article>
+    </div>
+
+    <div class="cards" style="margin-top:14px;">
+      <article class="card">
+        <figure>
+          <div class="rollover">
+            <video autoplay loop muted playsinline aria-label="Dog bathing video">
+              <source src="assets/showerdog.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <figcaption>A clip showing a dog bathing and cleaning session.</figcaption>
+        </figure>
+      </article>
+
+      <article class="card">
+        <figure>
+          <div class="rollover">
+            <video autoplay loop muted playsinline aria-label="Additional pet video">
+              <source src="assets/cats.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <figcaption>Additional footage of pets in a relaxed setting.</figcaption>
+        </figure>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <h3>Helpful visual content</h3>
+          <p>Photos and videos give you a clearer understanding of the place and services before booking.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">© 2026 - Joud Project | Pet Care</div>
+</footer>
+
+<audio id="clickSound" src="assets/click.mp3" preload="auto"></audio>
+<audio id="successSound" src="assets/success.mp3" preload="auto"></audio>
+<script src="main.js"></script>
+</body>
+</html>

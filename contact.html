@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Care - Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#content">Skip to content</a>
+
+<header>
+  <div class="container navbar">
+    <div class="brand">
+      <img class="brand-logo" src="assets/logo.png" alt="Pet Care logo">
+      <div>
+        <h1>Pet Care</h1>
+        <span>Comfortable and safe daily care for your pet</span>
+      </div>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-controls="mainNav" aria-expanded="false">☰</button>
+
+    <nav id="mainNav" aria-label="Main navigation">
+      <ul>
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="services.html">Services</a></li>
+        <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li><a class="nav-link" href="booking.html">Booking</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="content" class="container">
+
+  <section aria-labelledby="contactTitle">
+    <h2 id="contactTitle" class="section-title">Contact Us</h2>
+    <p class="section-sub">
+      If you have any questions about our services or booking process, you can send us a message using the form below.
+    </p>
+
+    <div class="info-box" style="margin-bottom:14px;">
+      <p>
+        This page is here to make communication simple and direct. You can ask about available services,
+        booking times, or any other details related to pet care.
+      </p>
+      <p>
+        Just enter your name, email address, and message, then submit the form so your request can be clearly shared.
+      </p>
+    </div>
+
+    <div class="form-card">
+      <form id="contactForm" novalidate>
+        <div class="form-grid">
+
+          <div>
+            <label for="cname">Name</label>
+            <input id="cname" type="text" placeholder="Your name" required aria-required="true">
+          </div>
+
+          <div>
+            <label for="cemail">Email Address</label>
+            <input id="cemail" type="email" placeholder="email@example.com" required aria-required="true">
+          </div>
+
+          <div style="grid-column: 1 / -1;">
+            <label for="cmsg">Your Message</label>
+            <textarea id="cmsg" placeholder="Write your question or message here..." required aria-required="true"></textarea>
+            <div class="helper">Please write a clear message so your request can be understood properly.</div>
+          </div>
+
+        </div>
+
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">Send</button>
+          <button class="btn" type="reset">Reset</button>
+        </div>
+
+        <div id="contactMessage" class="message" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">© 2026 - Joud Project | Pet Care</div>
+</footer>
+
+<audio id="clickSound" src="assets/click.mp3" preload="auto"></audio>
+<audio id="successSound" src="assets/success.mp3" preload="auto"></audio>
+<script src="main.js"></script>
+</body>
+</html>

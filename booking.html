@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Care - Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#content">Skip to content</a>
+
+<header>
+  <div class="container navbar">
+    <div class="brand">
+      <img class="brand-logo" src="assets/logo.png" alt="Pet Care logo">
+      <div>
+        <h1>Pet Care</h1>
+        <span>Comfortable and safe daily care for your pet</span>
+      </div>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-controls="mainNav" aria-expanded="false">☰</button>
+
+    <nav id="mainNav" aria-label="Main navigation">
+      <ul>
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="services.html">Services</a></li>
+        <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li><a class="nav-link" href="booking.html">Booking</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="content" class="container">
+
+  <section aria-labelledby="bookingTitle">
+    <h2 id="bookingTitle" class="section-title">Booking Form</h2>
+    <p class="section-sub">
+      Use this page to book the right service for your pet quickly and easily.
+    </p>
+
+    <div class="info-box" style="margin-bottom:14px;">
+      <p>
+        This booking form helps you choose the service type and preferred date, while also giving you space
+        to add any extra notes that may help during the care session.
+      </p>
+      <p>
+        The form checks important details before submission to make sure the basic information is entered correctly.
+      </p>
+    </div>
+
+    <div class="form-card">
+      <form id="bookingForm" novalidate aria-describedby="bookingHelp">
+        <div class="form-grid">
+
+          <div>
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" placeholder="Example: Joud Alhmoud" required aria-required="true">
+            <div class="helper">Please enter at least 3 characters.</div>
+          </div>
+
+          <div>
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" placeholder="name@email.com" required aria-required="true">
+            <div class="helper">Your email should include @ and a dot.</div>
+          </div>
+
+          <div>
+            <label for="date">Booking Date</label>
+            <input id="date" name="date" type="date" required aria-required="true">
+          </div>
+
+          <div>
+            <label for="service">Service Type</label>
+            <select id="service" name="service" required aria-required="true">
+              <option value="">— Choose a service —</option>
+              <option value="Bathing">Bathing</option>
+              <option value="Trimming">Trimming</option>
+              <option value="Full Grooming">Full Grooming</option>
+            </select>
+          </div>
+
+          <div style="grid-column: 1 / -1;">
+            <label for="notes">Additional Notes</label>
+            <textarea id="notes" name="notes" placeholder="Write any useful details about your pet or the service..."></textarea>
+            <div id="bookingHelp" class="helper">This field is optional and can include any important information.</div>
+          </div>
+
+        </div>
+
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">Submit Booking</button>
+          <button class="btn" type="reset">Reset</button>
+          <button class="btn" id="loadBookingBtn" type="button">Show Last Saved Booking</button>
+        </div>
+
+        <div id="bookingMessage" class="message" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">© 2026 - Joud Project | Pet Care</div>
+</footer>
+
+<audio id="clickSound" src="assets/click.mp3" preload="auto"></audio>
+<audio id="successSound" src="assets/success.mp3" preload="auto"></audio>
+<script src="main.js"></script>
+</body>
+</html>

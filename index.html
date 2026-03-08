@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Care - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#content">Skip to content</a>
+
+<header>
+  <div class="container navbar">
+    <div class="brand">
+      <img class="brand-logo" src="assets/logo.png" alt="Pet Care logo">
+      <div>
+        <h1>Pet Care</h1>
+        <span>Comfortable and safe daily care for your pet</span>
+      </div>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-controls="mainNav" aria-expanded="false">☰</button>
+
+    <nav id="mainNav" aria-label="Main navigation">
+      <ul>
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="services.html">Services</a></li>
+        <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li><a class="nav-link" href="booking.html">Booking</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="content" class="container">
+
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="hero-grid">
+      <article class="hero-card">
+        <div class="hero-content">
+          <h2 id="heroTitle" class="hero-title">Everything your pet needs in one place</h2>
+
+          <p id="ttsText" class="hero-text">
+            At Pet Care, we provide gentle and professional daily care for pets in a safe and comfortable environment.
+            Our services are designed to help pets stay clean, healthy, and happy while giving owners an easy and clear way to book what they need.
+          </p>
+
+          <p class="hero-text">
+            You can explore our services, watch visual examples in the gallery, and book the right option for your pet in just a few steps.
+            We focus on comfort, cleanliness, and simple care that fits different pet needs.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="booking.html">Book Now</a>
+
+            <div class="tools-menu">
+              <button
+                class="tools-toggle"
+                id="toolsToggle"
+                type="button"
+                aria-label="Open page tools"
+                aria-controls="toolsList"
+                aria-expanded="false">
+                ☰
+              </button>
+
+              <ul class="tools-list" id="toolsList" aria-label="Page tools">
+                <li><button class="btn tools-btn" id="ttsBtn" type="button">🔊 Read Intro</button></li>
+                <li><button class="btn tools-btn" id="readAllBtn" type="button">📖 Read Page</button></li>
+                <li><button class="btn tools-btn" id="stopReadBtn" type="button">⏹ Stop Reading</button></li>
+                <li><button class="btn tools-btn" id="bgBtn" type="button">🎨 Change Background</button></li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="helper">
+            Use the menu button to open reading and display tools.
+          </p>
+        </div>
+      </article>
+
+      <aside class="hero-card hero-media" aria-label="Welcome video">
+        <span class="badge">Autoplay</span>
+        <figure>
+          <video autoplay loop muted playsinline aria-label="Video showing pets in a calm and comfortable environment">
+            <source src="assets/cats.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <figcaption>
+            A welcome video showing pets in a calm and comfortable setting.
+          </figcaption>
+        </figure>
+      </aside>
+    </div>
+  </section>
+
+  <section aria-labelledby="aboutTitle">
+    <h2 id="aboutTitle" class="section-title">Care services for every need</h2>
+    <p class="section-sub">
+      We offer services that support your pet’s comfort, hygiene, and overall appearance.
+    </p>
+
+    <div class="info-box">
+      <p>
+        Some pets need regular bathing, while others need trimming and grooming to stay neat and comfortable.
+        That is why we provide different options to suit different care routines and needs.
+      </p>
+      <p>
+        This website helps you quickly understand what we offer, view real visual examples, and move directly to booking when you are ready.
+      </p>
+      <p>
+        Our aim is to make pet care simple, clear, and stress-free for both pets and their owners.
+      </p>
+    </div>
+  </section>
+
+  <section aria-labelledby="featuresTitle">
+    <h2 id="featuresTitle" class="section-title">What you can find on the website</h2>
+    <p class="section-sub">Useful pages that help you explore services and book easily.</p>
+
+    <div class="cards">
+      <article class="card">
+        <div class="rollover">
+          <img class="base" src="assets/catphoto.png" alt="A calm cat">
+          <img class="hover" src="assets/catanddogphoto.png" alt="A cat and a dog together">
+        </div>
+        <div class="card-body">
+          <h3>Visual examples</h3>
+          <p>Photos and videos help you understand the environment and care experience more clearly.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="rollover">
+          <img class="base" src="assets/photodog1.png" alt="A dog">
+          <img class="hover" src="assets/petsphoto.png" alt="A group of pets">
+        </div>
+        <div class="card-body">
+          <h3>Different services</h3>
+          <p>You can compare available care options and choose what suits your pet best.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="rollover">
+          <img class="base" src="assets/petsphoto.png" alt="Pets">
+          <img class="hover" src="assets/catphoto.png" alt="Alternative cat image">
+        </div>
+        <div class="card-body">
+          <h3>Easy booking</h3>
+          <p>Once you choose a service, you can move directly to the booking form and submit your details.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">© 2026 - Joud Project | Pet Care</div>
+</footer>
+
+<audio id="clickSound" src="assets/click.mp3"></audio>
+<audio id="successSound" src="assets/success.mp3"></audio>
+
+<script src="main.js"></script>
+</body>
+</html>
